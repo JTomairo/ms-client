@@ -14,7 +14,7 @@ public class ClientController {
 
     @GetMapping("/listClients")
     public Flux<Client> listClients(){
-        return Flux.fromIterable(clientRepository.findAll());
+        return clientRepository.findAll();
     }
 
     @PostMapping("/addClient")
@@ -24,7 +24,7 @@ public class ClientController {
 
     @PutMapping("/updateClient")
     public Mono<Client> updateClient(@RequestBody Client client) {
-        return Mono.just(clientRepository.save(client));
+        return clientRepository.save(client);
     }
 
     @DeleteMapping("/deleteClient/{id}")
