@@ -24,6 +24,11 @@ public class ClientServiceImpl implements IClientService {
     }
 
     @Override
+    public Mono<Client> findById(String id) {
+        return clientRepository.findById(id);
+    }
+
+    @Override
     public Mono<Client> save(Client client) {
         client.setRegisterDate(LocalDateTime.now());
         return clientRepository.save(client);

@@ -24,6 +24,12 @@ public class ClientController {
         return clientService.findAll();
     }
 
+    @ApiOperation(value = "Get a specific client", response = String.class)
+    @GetMapping("/getClient/{id}")
+    public Mono<Client> getClient(@PathVariable("id") String id) {
+        return clientService.findById(id);
+    }
+
     @ApiOperation(value = "Create client", response = String.class)
     @PostMapping("/addClient")
     public void createClient(@RequestBody Client client) {
