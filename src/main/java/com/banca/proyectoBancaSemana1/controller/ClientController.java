@@ -11,27 +11,28 @@ import reactor.core.publisher.Mono;
 @Slf4j
 @RestController
 public class ClientController {
+
     @Autowired
-    private ClientServiceImpl clientRepository;
+    private ClientServiceImpl clientService;
 
     @GetMapping("/listClients")
-    public Flux<Client> listClients(){
-        return clientRepository.findAll();
+    public Flux<Client> listClients() {
+        return clientService.findAll();
     }
 
     @PostMapping("/addClient")
     public void createClient(@RequestBody Client client) {
-        clientRepository.save(client);
+        clientService.save(client).subscribe();
     }
 
     @PutMapping("/updateClient")
     public Mono<Client> updateClient(@RequestBody Client client) {
-        return clientRepository.update(client);
+        return clientService.update(client);
     }
 
     @DeleteMapping("/deleteClient/{id}")
     public Mono<Void> deleteClient(@PathVariable("id") Integer id) {
-        return clientRepository.deleteById(id);
+        return clientService.deleteById(id);
     }
 
 }
