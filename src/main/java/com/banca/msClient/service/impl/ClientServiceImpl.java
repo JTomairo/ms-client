@@ -1,8 +1,8 @@
-package com.banca.proyectoBancaSemana1.service.impl;
+package com.banca.msClient.service.impl;
 
-import com.banca.proyectoBancaSemana1.model.Client;
-import com.banca.proyectoBancaSemana1.repository.IClientRepository;
-import com.banca.proyectoBancaSemana1.service.IClientService;
+import com.banca.msClient.model.Client;
+import com.banca.msClient.repository.IClientRepository;
+import com.banca.msClient.service.IClientService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

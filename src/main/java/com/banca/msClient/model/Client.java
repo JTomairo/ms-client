@@ -1,4 +1,4 @@
-package com.banca.proyectoBancaSemana1.model;
+package com.banca.msClient.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
@@ -9,7 +9,6 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 @Data
 @Builder

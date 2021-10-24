@@ -1,7 +1,7 @@
-package com.banca.proyectoBancaSemana1.controller;
+package com.banca.msClient.controller;
 
-import com.banca.proyectoBancaSemana1.model.Client;
-import com.banca.proyectoBancaSemana1.service.impl.ClientServiceImpl;
+import com.banca.msClient.model.Client;
+import com.banca.msClient.service.impl.ClientServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

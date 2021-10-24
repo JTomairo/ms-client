@@ -1,7 +1,6 @@
-package com.banca.proyectoBancaSemana1.model;
+package com.banca.msClient.model;
 
 import lombok.*;
-import org.springframework.data.annotation.Id;
 import org.springframework.format.annotation.NumberFormat;
 
 import javax.validation.constraints.Size;

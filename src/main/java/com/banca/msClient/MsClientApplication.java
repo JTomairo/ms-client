@@ -1,13 +1,13 @@
-package com.banca.proyectoBancaSemana1;
+package com.banca.msClient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProyectoBancaSemana1Application {
+public class MsClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProyectoBancaSemana1Application.class, args);
+		SpringApplication.run(MsClientApplication.class, args);
 	}
 
 }

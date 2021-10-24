@@ -1,6 +1,6 @@
-package com.banca.proyectoBancaSemana1.repository;
+package com.banca.msClient.repository;
 
-import com.banca.proyectoBancaSemana1.model.Client;
+import com.banca.msClient.model.Client;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

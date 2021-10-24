@@ -1,6 +1,6 @@
-package com.banca.proyectoBancaSemana1.service;
+package com.banca.msClient.service;
 
-import com.banca.proyectoBancaSemana1.model.Client;
+import com.banca.msClient.model.Client;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
