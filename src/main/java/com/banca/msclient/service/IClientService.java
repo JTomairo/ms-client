@@ -1,6 +1,6 @@
-package com.banca.msClient.service;
+package com.banca.msclient.service;
 
-import com.banca.msClient.model.Client;
+import com.banca.msclient.model.Client;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

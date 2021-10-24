@@ -1,4 +1,4 @@
-package com.banca.msClient.model;
+package com.banca.msclient.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;

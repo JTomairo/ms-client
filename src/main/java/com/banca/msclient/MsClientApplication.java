@@ -1,4 +1,4 @@
-package com.banca.msClient;
+package com.banca.msclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

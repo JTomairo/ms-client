@@ -1,8 +1,8 @@
-package com.banca.msClient.service.impl;
+package com.banca.msclient.service.impl;
 
-import com.banca.msClient.model.Client;
-import com.banca.msClient.repository.IClientRepository;
-import com.banca.msClient.service.IClientService;
+import com.banca.msclient.model.Client;
+import com.banca.msclient.repository.IClientRepository;
+import com.banca.msclient.service.IClientService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

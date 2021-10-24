@@ -1,4 +1,4 @@
-package com.banca.msClient.model;
+package com.banca.msclient.model;
 
 import lombok.*;
 import org.springframework.format.annotation.NumberFormat;

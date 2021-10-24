@@ -1,4 +1,4 @@
-package com.banca.msClient.config;
+package com.banca.msclient.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,7 @@
-package com.banca.msClient.controller;
+package com.banca.msclient.controller;
 
-import com.banca.msClient.model.Client;
-import com.banca.msClient.service.impl.ClientServiceImpl;
+import com.banca.msclient.model.Client;
+import com.banca.msclient.service.impl.ClientServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
