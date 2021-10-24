@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Builder
@@ -21,8 +21,8 @@ public class Client {
     @Id
     private String id;
     @Size(max = 8)
-    @Field(name ="identyNumber")
-    private String identyNumber;
+    @Field(name ="identityNumber")
+    private String identityNumber;
     @Size(max = 200)
     @Field(name ="name")
     private String name;
@@ -36,10 +36,10 @@ public class Client {
     @Field(name ="email")
     @Email
     private String email;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyy-MM:ss")
-    private LocalDateTime registerDate;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyy-MM:ss")
-    private LocalDateTime updateDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date registerDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date updateDate;
     @Field(name ="clientType")
     private ClientType clientType;
 }
