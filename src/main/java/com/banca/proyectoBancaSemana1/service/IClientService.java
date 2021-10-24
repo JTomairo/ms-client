@@ -8,5 +8,5 @@ public interface IClientService {
     public Flux<Client> findAll();
     public Mono<Client> save(Client client);
     public Mono<Client> update(Client client);
-    public Mono<Void> deleteById(Integer id);
+    public Mono<Void> deleteById(String id);
 }

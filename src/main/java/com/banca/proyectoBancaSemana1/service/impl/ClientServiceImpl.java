@@ -3,11 +3,15 @@ package com.banca.proyectoBancaSemana1.service.impl;
 import com.banca.proyectoBancaSemana1.model.Client;
 import com.banca.proyectoBancaSemana1.repository.IClientRepository;
 import com.banca.proyectoBancaSemana1.service.IClientService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDateTime;
+
+@Slf4j
 @Service
 public class ClientServiceImpl implements IClientService {
 
@@ -21,6 +25,7 @@ public class ClientServiceImpl implements IClientService {
 
     @Override
     public Mono<Client> save(Client client) {
+        client.setRegisterDate(LocalDateTime.now());
         return clientRepository.save(client);
     }
 
@@ -30,7 +35,7 @@ public class ClientServiceImpl implements IClientService {
     }
 
     @Override
-    public Mono<Void> deleteById(Integer id) {
+    public Mono<Void> deleteById(String id) {
         return clientRepository.deleteById(id);
     }
 

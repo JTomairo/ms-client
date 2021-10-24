@@ -31,7 +31,7 @@ public class ClientController {
     }
 
     @DeleteMapping("/deleteClient/{id}")
-    public Mono<Void> deleteClient(@PathVariable("id") Integer id) {
+    public Mono<Void> deleteClient(@PathVariable("id") String id) {
         return clientService.deleteById(id);
     }
 
